@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <center>
+    <h2><u>Registration Form</u></h2>
+</center>
+<br><br>
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+<fieldset>
+    <br>
+        <form method="post" action="/form_handler">
+            <br>
+            <!--name field-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <!--email field-->
+            <label for="email">Email:</label>
+            <input type="text" id="email" email="email" required><br><br>
+            <!--phone number field-->
+            <label for="phone">Phone No.:</label>
+            <input type="tel" id="phone" phone="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="e.g:123-456-7890" required><br><br>
+            <!--sex field-->
+            <br>
+            <label>Sex:</label>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female<br><br>
+            <!--Date of birth-->
+            <br>
+            <label>D.O.B</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <!--Languages field-->
+            <br>
+            <label>English</label>
+            <input type="checkbox" id="English" name="English">
+            <label>Telugu</label>
+            <input type="checkbox" id="Telugu" name="Telugu">
+            <label>Hindi</label>
+            <input type="checkbox" id="Hindi" name="Hindi">
+            <label>Tamil</label>
+            <input type="checkbox" id="Tamil" name="Tamil"><br><br>
+            <!--Address-->
+            <br>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </form>
+</fieldset>
+</div>    
+</body>
+</html>
